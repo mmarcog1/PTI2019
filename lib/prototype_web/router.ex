@@ -18,6 +18,7 @@ defmodule PrototypeWeb.Router do
     pipe_through :browser
 
     get "/", PageController, :index
+    get "/rick", PageController, :rick
     get "/login", SessionController, :new
     get "/logout", SessionController, :delete
     resources "/users", UserController

@@ -7,8 +7,11 @@
   <p></p>
 
   
-  <a class="btn btn-green"><%= link "Login", to: Routes.session_path(@conn, :new) %></a>
+  <a href="<%= Routes.session_path(@conn, :new) %>" class="btn btn-green">Sign in</a>
   <a href="#" class="btn btn-blue">Nothing</a>
   <a href="#" class="btn btn-yellow">Placeholder</a>
-  <a href="#" class="btn btn-red">Don't click this one</a>
+  <a href="" class="btn btn-red">Don't click this one</a>
 </div>
+
+
+
