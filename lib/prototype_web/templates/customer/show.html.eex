@@ -1,0 +1,24 @@
+<h1>Dashboard: <%= @customer.name %> </h1>
+
+<ul>
+
+  <li>
+    <strong>Name:</strong>
+    <%= @customer.name %>
+  </li>
+
+  <li>
+    <strong>Description:</strong>
+    <%= @customer.description %>
+  </li>
+</ul>
+
+<iframe width="800" height="600" src="https://app.powerbi.com/view?r=<%=@customer.report%>" frameborder="0" allowFullScreen="true"></iframe>
+
+
+
+
+
+
+<span><%= link "Edit", to: Routes.customer_path(@conn, :edit, @customer) %></span>
+<span><%= link "Back", to: Routes.customer_path(@conn, :index) %></span>

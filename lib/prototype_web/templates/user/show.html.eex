@@ -1,0 +1,11 @@
+
+<h1><%= @user.name %></h1>
+
+<div class="report">
+
+  <iframe src="https://app.powerbi.com/view?r=<%= @user.username %>" frameborder="0" allowFullScreen="true"></iframe>
+
+</div>
+
+
+<span><%= link "Back", to: Routes.user_path(@conn, :index) %></span>
