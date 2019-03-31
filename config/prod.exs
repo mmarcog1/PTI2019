@@ -20,10 +20,12 @@ config :prototype, PrototypeWeb.Endpoint,
 config :logger, level: :info
 
 # Configure your database
-config :prototyoe, Prototype.Repo,
-  url: System.get_env("DATABASE_URL"),
+# Configure your database
+config :prototype, Prototype.Repo,
+  adapter: Ecto.Adapters.Postgres,
   pool_size: String.to_integer(System.get_env("POOL_SIZE") || "10"),
-  ssl: true
+  ssl: true,
+  url: System.get_env("DATABASE_URL")
 
 # ## SSL Support
 #
