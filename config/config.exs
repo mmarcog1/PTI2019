@@ -10,6 +10,8 @@ use Mix.Config
 config :prototype,
   ecto_repos: [Prototype.Repo]
 
+config :account_service, ecto_repos: [AccountService.Repo]
+
 # Configures the endpoint
 config :prototype, PrototypeWeb.Endpoint,
   url: [host: "localhost"],
