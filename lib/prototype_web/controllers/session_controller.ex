@@ -14,7 +14,7 @@ defmodule PrototypeWeb.SessionController do
                 |> put_flash(:info, "Welcome #{user.name}")
                 |> put_session(:user_id, user.id)
                 |> configure_session(renew: true)
-                |> redirect(to: "/")
+                |> redirect(to: Routes.user_path(conn, :show, user.id))
             {:error, :unauthorized} ->
                 conn
                 |> put_flash(:error, "Bad email/password combination")

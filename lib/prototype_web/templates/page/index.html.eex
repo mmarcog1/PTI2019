@@ -1,4 +1,14 @@
 <section class="phx-hero">
   <h1><%= gettext "Welcome to %{name}!", name: "Prototype" %></h1>
-  <p>The goal of this webpage is to give easy access to powerBI reports</p>
 </section>
+
+<div class="wrap">
+  <h2>Sign in to view your reports</h2>
+  <p></p>
+
+  
+  <a class="btn btn-green"><%= link "Login", to: Routes.session_path(@conn, :new) %></a>
+  <a href="#" class="btn btn-blue">Nothing</a>
+  <a href="#" class="btn btn-yellow">Placeholder</a>
+  <a href="#" class="btn btn-red">Don't click this one</a>
+</div>
