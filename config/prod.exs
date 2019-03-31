@@ -10,9 +10,9 @@ use Mix.Config
 # which you should run after static files are built and
 # before starting your production server.
 config :prototype, PrototypeWeb.Endpoint,
-  http: [:inet6, port: System.get_env("PORT") || 4000],
+  http: [:inet6, port: System.get_env("PORT")],
   url: [scheme: "https", host: "glacial-savannah-93502.herokuapp.com", port: 443],
-force_ssl: [rewrite_on: [:x_forwarded_proto]],
+  force_ssl: [rewrite_on: [:x_forwarded_proto]],
   cache_static_manifest: "priv/static/manifest.json",
   secret_key_base: Map.fetch!(System.get_env(), "SECRET_KEY_BASE")
 
@@ -21,10 +21,9 @@ config :logger, level: :info
 
 # Configure your database
 config :prototyoe, Prototype.Repo,
-adapter: Ecto.Adapters.Postgres,
-url: System.get_env("DATABASE_URL"),
-pool_size: String.to_integer(System.get_env("POOL_SIZE") || "10"),
-ssl: true
+  url: System.get_env("DATABASE_URL"),
+  pool_size: String.to_integer(System.get_env("POOL_SIZE") || "10"),
+  ssl: true
 
 # ## SSL Support
 #
