@@ -11,10 +11,10 @@ use Mix.Config
 # before starting your production server.
 config :prototype, PrototypeWeb.Endpoint,
   http: [:inet6, port: System.get_env("PORT") || 4000],
-  url: [scheme: "https", host: "polar-hamlet-50943.herokuapp.com", port: 443],
+  url: [scheme: "https", host: "glacial-savannah-93502.herokuapp.com", port: 443],
 force_ssl: [rewrite_on: [:x_forwarded_proto]],
   cache_static_manifest: "priv/static/manifest.json",
-secret_key_base: System.get_env("SECRET_KEY_BASE")
+  secret_key_base: Map.fetch!(System.get_env(), "SECRET_KEY_BASE")
 
 # Do not print debug messages in production
 config :logger, level: :info
