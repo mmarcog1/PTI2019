@@ -25,3 +25,4 @@
 </table>
 
 <span><%= link "New User", to: Routes.user_path(@conn, :new) %></span>
+<span><%= link "Back", to: Routes.page_path(@conn, :index) %></span>
