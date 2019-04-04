@@ -13,7 +13,7 @@
   </li>
 </ul>
 
-<iframe width="800" height="600" src="https://app.powerbi.com/view?r=<%=@customer.report%>" frameborder="0" allowFullScreen="true"></iframe>
+<iframe width="800" height="600" src=" https://mmarcog1.shinyapps.io/test/" frameborder="0" allowFullScreen="true"></iframe>
 
 
 
