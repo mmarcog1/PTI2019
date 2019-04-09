@@ -10,7 +10,7 @@
   <a href="<%= Routes.session_path(@conn, :new) %>" class="btn btn-green">Sign in</a>
   <a href="<%= Routes.user_path(@conn, :new)%>" class="btn btn-blue">Sign up</a>
   <a href="<%= Routes.user_path(@conn, :index)%>" class="btn btn-yellow">Users</a>
-  <a href="http://www.screenprank.com/gandalf.html" class="btn btn-red">Don't click this one</a>
+  <a href="<%= Routes.customer_path(@conn, :index)%>" class="btn btn-red">Shiny dashboard</a>
 </div>
 
 
