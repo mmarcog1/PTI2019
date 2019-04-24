@@ -30,6 +30,6 @@
   <% end %>
   </div>
   <div>
-    <%= submit "Save" %>
+    <%= submit "Save", class: "btn-green" %>
   </div>
 <% end %>

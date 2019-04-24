@@ -1,5 +1,5 @@
 <section class="phx-hero">
-  <h1><%= gettext "Welcome to %{name}!", name: "Prototype" %></h1>
+  <h1><%= gettext "**%{name}", name: "Prototype" %></h1>
 </section>
 
 <div class="wrap">
@@ -8,9 +8,9 @@
 
   
   <a href="<%= Routes.session_path(@conn, :new) %>" class="btn btn-green">Sign in</a>
-  <a href="<%= Routes.user_path(@conn, :new)%>" class="btn btn-blue">Sign up</a>
-  <a href="<%= Routes.user_path(@conn, :index)%>" class="btn btn-yellow">Users</a>
-  <a href="<%= Routes.customer_path(@conn, :index)%>" class="btn btn-red">Shiny dashboard</a>
+  <a href="<%= Routes.user_path(@conn, :new)%>" class="btn btn-green">New user</a>
+  <a href="<%= Routes.user_path(@conn, :index)%>" class="btn btn-green">Users</a>
+  <a href="<%= Routes.customer_path(@conn, :index)%>" class="btn btn-green">Shiny dashboard</a>
 </div>
 
 
